@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #202123;
+  --secondary-color: #353740;
+  --tertiary-color: #4a98d2;
+  --font-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  all: unset;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 25rem;
+  max-width: 100%;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+h1 {
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
+#drag-area {
+  height: 15rem;
+  border: 2px dashed var(--secondary-color);
+  border-radius: 0.25rem;
+  margin: 2rem auto 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#drag-area:hover {
+  border-color: var(--tertiary-color);
+}
+
+#drag-area.dragging {
+  border-color: var(--tertiary-color);
+}
+
+input {
+  border: 2px dashed var(--secondary-color);
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  padding: 0 0.3rem;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:hover {
+  border-color: var(--tertiary-color);
+}
+
+input[type='file'] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+img {
+  width: 10rem;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  background-color: var(--tertiary-color);
+  border-radius: 0.25rem;
+}
+
+#generate-button {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem;
+  transition: opacity 0.2s ease-in-out;
+  height: 2.5rem;
+}
+
+.container > p {
+  text-align: center;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: var(--secondary-color);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#colors {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#colors > div {
+  flex: 1;
+  padding-top: 0.2rem;
+}
+
+#colors h2 {
+  font-size: 1.1rem;
+}
+
+.color-row {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+#copy-rgb,
+#copy-hex {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.3rem;
+}
