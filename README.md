@@ -1,7 +1,34 @@
 # Programming Tools Colors
 
-Inspired on _Github colors_ for programming languages and in [this repo](https://github.com/ozh/github-colors) authored by [Ozh](https://github.com/ozh/), Programming tools colors is a non-official collection of colors that represent programming frameworks, libraries and other tools.
+Inspired on _Github colors_ for programming languages and in [this repo](https://github.com/ozh/github-colors) authored by [Ozh](https://github.com/ozh/), Programming tools colors is a non-official collection of colors that represent programming frameworks, libraries and other tools. It is a npm package that can be used in other code projects.
 To add new entrances to the list, you can use [this user interface](https://marianapatcosta.github.io/programming-tools-colors/) that identifies the dominant color of an image, either by posting an image URL or by file upload.
+
+## Installation
+
+### **_npm_**
+
+```shell
+npm install @marianapatcosta/programming-tools-colors
+```
+
+### **_yarn_**
+
+```shell
+yarn add @marianapatcosta/programming-tools-colors
+```
+
+## Get Start
+
+```js
+import colorMapper from '@marianapatcosta/programming-tools-colors'
+
+const toolName = 'React'
+const toolColor = colorMapper[toolName.toLowerCase()]
+```
+
+## Tools List
+
+Here is the list of the tools currently present in the list:
 
 ![](https://dummyimage.com/120x120/dd0031/ffffff.jpg&text=Angular)
 ![](https://dummyimage.com/120x120/bb464b/ffffff.jpg&text=Babylon.js)

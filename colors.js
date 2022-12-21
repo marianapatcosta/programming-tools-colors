@@ -1,4 +1,4 @@
-export const colorMapper = {
+module.exports = {
   angular: '#dd0031',
   babylonjs: '#bb464b',
   backbonejs: '#002a41',

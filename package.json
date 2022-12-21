@@ -1,6 +1,6 @@
 {
   "name": "@marianapatcosta/programming-tools-colors",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Mariana Costa",
   "description": "Non-official collection of colors that represent programming frameworks, libraries and other tools",
   "main": "colors.js",
@@ -23,14 +23,5 @@
   "keywords": [
     "programing tools",
     "colors"
-  ],
-  "unpkg": "dist/programming-tools-colors.iife.js",
-  "jsdelivr": "dist/programming-tools-colors.iife.js",
-  "module": "./dist/programming-tools-colors.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/programming-tools-colors.es.js",
-      "require": "./dist/programming-tools-colors.umd.js"
-    }
-  }
+  ]
 }
