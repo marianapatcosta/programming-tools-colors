@@ -1,8 +1,10 @@
 /* Elements */
 const dropArea = document.getElementById('drag-area')
-const imageUrlInput = document.getElementById('image-url')
+const imageUrlInput = document.getElementById('image-url') as HTMLInputElement
 const imageUploadInput = document.getElementById('image-upload')
-const imagePreview = document.getElementById('image-preview')
+const imagePreview = document.getElementById(
+  'image-preview'
+) as HTMLImageElement
 const getColorsButton = document.getElementById('generate-button')
 const colorsContainer = document.getElementById('colors')
 const rgbColor = document.getElementById('rgb-color')
@@ -84,8 +86,6 @@ const handleDragAreaClick = () => {
 
 const handleUpload = (event) => {
   if (!event.target.files) return
-
-  console.log(454, event.target.files[0])
   getImageUrl(event.target.files[0])
 }
 

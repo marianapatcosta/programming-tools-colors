@@ -1,6 +1,6 @@
 {
   "name": "@marianapatcosta/programming-tools-colors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Mariana Costa",
   "description": "Non-official collection of colors that represent programming frameworks, libraries and other tools",
   "main": "colors.js",

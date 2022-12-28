@@ -1,6 +1,6 @@
 # Programming Tools Colors
 
-Inspired on _Github colors_ for programming languages and in [this repo](https://github.com/ozh/github-colors) authored by [Ozh](https://github.com/ozh/), Programming tools colors is a non-official collection of colors that represent programming frameworks, libraries and other tools. It is a npm package that can be used in other code projects.
+Inspired by _Github colors_ for programming languages and in [this repo](https://github.com/ozh/github-colors) authored by [ozh](https://github.com/ozh/), *Programming Tools Colors* is a non-official collection of colors that represent programming frameworks, libraries and other tools. It is a npm package that can be used in other code projects.
 To add new entrances to the list, you can use [this user interface](https://marianapatcosta.github.io/programming-tools-colors/) that identifies the dominant color of an image, either by posting an image URL or by file upload.
 
 ## Installation

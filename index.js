@@ -74,7 +74,6 @@ var handleDragAreaClick = function () {
 var handleUpload = function (event) {
     if (!event.target.files)
         return;
-    console.log(454, event.target.files[0]);
     getImageUrl(event.target.files[0]);
 };
 var handleUrlInput = function (event) {
